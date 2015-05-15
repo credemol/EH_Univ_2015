@@ -45,6 +45,7 @@ public class UserListServlet extends HttpServlet {
 			for(User user : userDao.getAllUsers()) {
 				writer.println("<li><a href='mailto:" + user.getEmail() + "'>" + user.getDisplayName() + "</a></li>");
 			}
+			writer.println("</ul>");
 			writer.println("</body></html>");
 			
 		} catch(Exception e) {
