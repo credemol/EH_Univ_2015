@@ -2,6 +2,7 @@
     <wb-module deploy-name="HelloWorldWeb">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/testsrc"/>
         <property name="context-root" value="HelloWorldWeb"/>
         <property name="java-output-path" value="/HelloWorldWeb/build/classes"/>
     </wb-module>
