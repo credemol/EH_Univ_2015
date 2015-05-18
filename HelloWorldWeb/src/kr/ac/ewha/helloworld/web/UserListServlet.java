@@ -33,6 +33,7 @@ public class UserListServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+    /*
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
 		UserDao userDao = new UserDaoImpl();
 
@@ -56,8 +57,9 @@ public class UserListServlet extends HttpServlet {
 			}
 		}
 	}
+	*/
 
-	/*
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		UserDao userDao = new UserDaoImpl();
 
@@ -67,5 +69,5 @@ public class UserListServlet extends HttpServlet {
 		request.setAttribute("users", users);
 		request.getRequestDispatcher("WEB-INF/jsp/user/list.jsp").forward(request, response);
 	}
-	*/
+	
 }

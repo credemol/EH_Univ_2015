@@ -10,5 +10,8 @@ public interface UserDao {
 	public Collection<User> findUser(int pageNo, int pageSize, User query) throws DaoException;
 	public void insertUser(User user) throws DaoException;
 	public void updateUser(User user) throws DaoException;
+	public void savePassword(int id, String password) throws DaoException;
 	public void deleteUser(int id) throws DaoException;
+	public User getUser(int id) throws DaoException;
+	public User getUserByLoginId(String loginId) throws DaoException;
 }
