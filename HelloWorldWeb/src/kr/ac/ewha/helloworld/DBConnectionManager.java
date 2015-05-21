@@ -20,8 +20,12 @@ public class DBConnectionManager {
 		return Holder.instance;
 	}
 	
+	public Connection getConnection(String jdbcUrl) throws SQLException {
+		return DriverManager.getConnection(jdbcUrl);
+	}
+	
 	public static Connection getConnection() throws SQLException {
-		return DriverManager.getConnection(JDBC_URL);
+		return Holder.instance.getConnection(JDBC_URL);
 	}
 	
 	private static class Holder {
